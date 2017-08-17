@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * @file
+ * Contains embed_youtube.module.
+ */
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function embed_youtube_help($route_name, RouteMatchInterface $route_match) {
+    switch ($route_name) {
+        // Main module help for the embed_youtube module.
+        case 'help.page.embed_youtube':
+            $output = '';
+            $output .= '<h3>' . t('About') . '</h3>';
+            $output .= '<p>' . t('Embed youtube video to web page') . '</p>';
+            return $output;
+
+        default:
+    }
+}

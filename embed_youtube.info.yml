@@ -1,0 +1,5 @@
+name: Embed Youtube
+type: module
+description: Embed youtube video to web page
+core: 8.x
+package: Custom
