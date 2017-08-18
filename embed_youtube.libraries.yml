@@ -1,0 +1,5 @@
+youtube-responsive:
+  version: 1.x
+  css:
+    theme:
+      css/embed_youtube.css: {}

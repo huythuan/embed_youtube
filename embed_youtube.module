@@ -21,3 +21,10 @@ function embed_youtube_help($route_name, RouteMatchInterface $route_match) {
         default:
     }
 }
+/**
+ * @implement hook_preprocess_page
+ * @param type $variables
+ */
+function embed_youtube_preprocess_page(&$variables) {
+  $variables['#attached']['library'][] = 'embed_youtube/youtube-responsive';     
+}
